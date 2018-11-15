@@ -6,7 +6,7 @@ More info soon…
 <b>comming soon…</b>
 
 # 18650 CASE COMPONENTS
-<b>2S Power-Indicator:</b></br>
+<b>Printed Case</b></br>
 See 3D files directory</br></br>
 
 <b>2S Power-Indicator</b></br>
