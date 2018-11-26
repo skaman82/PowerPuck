@@ -31,6 +31,7 @@ int mode;
 int menuselect;
 unsigned long runtime = 0;
 unsigned long spendtime = 0;
+unsigned long healthtime = 0;
 int AlarmState = LOW;
 long interval = 500;
 int MenuState = LOW;
@@ -136,26 +137,16 @@ void voltagetest()
  
   val = sensorValue;
   val = deadband(filter, val); 
- // val = map(val, 0, 1023, 0, 99)*10;  
+  // val = map(val, 0, 1023, 0, 99)*10;  
 
- 
- voltage = val * (5.0 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
+  voltage = val * (5.00 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
 
   voltage = round(voltage * 10) / 10.0; //round the result
   VoltageByte = voltage * 10;
 
 
- 
-
-  
   cellvoltage = voltage / lipo;
 
-
-
-  
-  //Serial.println(voltage);
-  //Serial.println(lipo);
-  //Serial.println(cellvoltage);   // print out the value you read:
 
   float cellfull = (max_cellvoltage) - (alarmvalue); //determine 100% of travel scale
   float cellstate = (max_cellvoltage) - (cellvoltage); //determine the actual cell delta value
@@ -164,12 +155,11 @@ void voltagetest()
   
 
 
- Serial.println(val);
-   Serial.println(sensorValue);
+  Serial.println(val);
+  Serial.println(sensorValue);
   Serial.println(battery_state);
- Serial.println(battery_health);
+  Serial.println(battery_health);
   Serial.println(voltage);
-
 
 
 
@@ -177,26 +167,56 @@ void voltagetest()
 
   if (battery_state >= 75 && battery_state < 100)
   {
-    battery_health = 4;
+    unsigned long currenthealthtime = millis();
+
+    if ((currenthealthtime - healthtime >= interval) && (battery_state >= 75 && battery_state < 100)) {
+      healthtime = currenthealthtime;
+      
+      battery_health = 4;
+    }
   }
   else if (battery_state >= 50 && battery_state < 75)
   {
-    battery_health = 3;
+    unsigned long currenthealthtime = millis();
+
+    if ((currenthealthtime - healthtime >= interval) && (battery_state >= 50 && battery_state < 75)) {
+      healthtime = currenthealthtime;
+      
+      battery_health = 3;
+    }
   }
   else if (battery_state >= 25 && battery_state < 50)
   {
-    battery_health = 2;
+   unsigned long currenthealthtime = millis();
+
+    if ((currenthealthtime - healthtime >= interval) && (battery_state >= 25 && battery_state < 50)) {
+      healthtime = currenthealthtime;
+      
+      battery_health = 2;
+    }
   }
   else if (battery_state >= 5 && battery_state < 25)
   {
-    battery_health = 1;
+    unsigned long currenthealthtime = millis();
+
+    if ((currenthealthtime - healthtime >= interval) && (battery_state >= 5 && battery_state < 25)) {
+      healthtime = currenthealthtime;
+      
+      battery_health = 1;
+    }
   }
   else if (battery_state >= 0)
   {
-    battery_health = 0;
-  }
+    unsigned long currenthealthtime = millis();
+
+    if ((currenthealthtime - healthtime >= interval) && (battery_state >= 0)) {
+      healthtime = currenthealthtime;
+      
+      battery_health = 0;
+    } 
+    }
   else {
-    battery_health = 0;
+     battery_health = 0;
   }
 
 
