@@ -15,9 +15,11 @@ U8GLIB_SSD1306_128X32 u8g(U8G_I2C_OPT_NONE);  // I2C / TWI
 #define VOLT_SENS               A0  // Voltage Sensor
 #define BUTTON_PIN               7  // Button
 #define longpresstime         1000  // in ms
-#define powertime             3000  // in ms
 #define alarmADDR                1  // EEPROM Adress
 
+
+#define NOTE_C4                 262  // C4
+#define NOTE_A6                 1760 // A6
 
 float voltage;
 int32_t lipo;
@@ -240,10 +242,6 @@ byte buttoncheck()
       delay(200);
     }
 
-    if (i_butt > (powertime / 2))
-    {
-      buttonz += 2;
-    }
   }
   else { }
 
@@ -269,11 +267,18 @@ void modecheck () {
         if (powermode == 1) {
           Serial.print(" button power");
           digitalWrite(9, LOW); // shutdown
+          tone(8, NOTE_A6, 200);
+          delay(500);
+          tone(8, NOTE_C4, 500);
           clearOLED();
           powermode = 0;
         }
         else {
           digitalWrite(9, HIGH); // turn on
+          delay(500);
+          digitalWrite(8, HIGH);
+          delay(100);
+          digitalWrite(8, LOW);
           powermode = 1;
         }
       }
