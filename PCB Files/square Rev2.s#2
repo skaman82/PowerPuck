@@ -11110,6 +11110,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="U1" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" deviceset="ATMEGA328P_TQFP" device="" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP"/>
 </parts>
 <sheets>
 <sheet>
@@ -11168,6 +11169,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <instance part="GND17" gate="1" x="43.18" y="119.38"/>
 <instance part="GND18" gate="1" x="91.44" y="27.94"/>
 <instance part="GND3" gate="1" x="-38.1" y="66.04"/>
+<instance part="U1" gate="U$1" x="-91.44" y="66.04"/>
 </instances>
 <busses>
 </busses>

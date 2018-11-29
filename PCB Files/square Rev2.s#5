@@ -11098,7 +11098,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <part name="C5" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="100nF"/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SW" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1"/>
-<part name="U1" library="lm1117_10" deviceset="LM1117?-*" device="MP" technology="5.0"/>
+<part name="LM1117" library="lm1117_10" deviceset="LM1117?-*" device="MP" technology="5.0"/>
 <part name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF"/>
 <part name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" deviceset="10NF" device="-0603-50V-10%" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -11156,7 +11156,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <instance part="C5" gate="G$1" x="-10.16" y="71.12"/>
 <instance part="GND10" gate="1" x="-10.16" y="43.18"/>
 <instance part="SW" gate="G$1" x="96.52" y="50.8" rot="R270"/>
-<instance part="U1" gate="G$1" x="12.7" y="7.62" rot="R180"/>
+<instance part="LM1117" gate="G$1" x="12.7" y="7.62" rot="R180"/>
 <instance part="C6" gate="G$1" x="-5.08" y="2.54"/>
 <instance part="C7" gate="G$1" x="25.4" y="2.54"/>
 <instance part="GND11" gate="1" x="-5.08" y="-5.08"/>
@@ -11247,7 +11247,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <wire x1="25.4" y1="0" x2="25.4" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="LM1117" gate="G$1" pin="GND"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="12.7" y1="15.24" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
 </segment>
@@ -11527,7 +11527,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <label x="121.92" y="50.8" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="IN"/>
+<pinref part="LM1117" gate="G$1" pin="IN"/>
 <wire x1="25.4" y1="7.62" x2="35.56" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 <junction x="25.4" y="7.62"/>
@@ -11537,7 +11537,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 </net>
 <net name="5V" class="1">
 <segment>
-<pinref part="U1" gate="G$1" pin="OUT"/>
+<pinref part="LM1117" gate="G$1" pin="OUT"/>
 <wire x1="5.08" y1="7.62" x2="5.08" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="7.62" x2="5.08" y2="7.62" width="0.1524" layer="91"/>

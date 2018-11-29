@@ -11410,11 +11410,11 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <wire x1="33.02" y1="93.98" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
 <junction x="33.02" y="93.98"/>
 <wire x1="-10.16" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="-10.16" y1="127" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="-10.16" y1="129.54" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-10.16" y="93.98"/>
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-15.24" y1="93.98" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
-<label x="-10.16" y="127" size="1.778" layer="95" rot="R90" xref="yes"/>
+<label x="-10.16" y="129.54" size="1.778" layer="95" rot="R90" xref="yes"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-10.16" y1="76.2" x2="-10.16" y2="93.98" width="0.1524" layer="91"/>
 <junction x="-10.16" y="93.98"/>

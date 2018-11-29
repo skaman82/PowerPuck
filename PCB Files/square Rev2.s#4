@@ -11137,7 +11137,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <instance part="GND2" gate="G$1" x="35.56" y="124.46" rot="R90"/>
 <instance part="9V" gate="G$1" x="35.56" y="134.62" rot="R90"/>
 <instance part="U3V12F9" gate="J$1" x="63.5" y="124.46" rot="R90"/>
-<instance part="C1" gate="G$1" x="30.48" y="83.82" rot="R270"/>
+<instance part="C1" gate="G$1" x="17.78" y="83.82" rot="R270"/>
 <instance part="C2" gate="G$1" x="2.54" y="111.76" rot="R270"/>
 <instance part="10K" gate="G$1" x="10.16" y="119.38" rot="R90"/>
 <instance part="C3" gate="G$1" x="17.78" y="73.66" rot="R270"/>
@@ -11152,7 +11152,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <instance part="GND6" gate="1" x="119.38" y="147.32" rot="R180"/>
 <instance part="GND7" gate="1" x="134.62" y="147.32" rot="R180"/>
 <instance part="GND8" gate="1" x="7.62" y="66.04" rot="R270"/>
-<instance part="GND9" gate="1" x="17.78" y="83.82" rot="R270"/>
+<instance part="GND9" gate="1" x="7.62" y="83.82" rot="R270"/>
 <instance part="C5" gate="G$1" x="-10.16" y="71.12"/>
 <instance part="GND10" gate="1" x="-10.16" y="43.18"/>
 <instance part="SW" gate="G$1" x="96.52" y="50.8" rot="R270"/>
@@ -11215,7 +11215,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="27.94" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="83.82" x2="10.16" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -11360,7 +11360,7 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="ATMEGA" gate="U$1" pin="AREF"/>
-<wire x1="35.56" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">

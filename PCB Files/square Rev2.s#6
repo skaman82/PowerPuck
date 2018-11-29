@@ -11028,10 +11028,10 @@ Source: &lt;a href="http://www.ti.com/lit/ds/symlink/lm1117-n.pdf"&gt;http://www
 <class number="0" name="default" width="0.2" drill="0.254">
 <clearance class="0" value="0.16"/>
 </class>
-<class number="1" name="power" width="0.2" drill="0.254">
+<class number="1" name="power" width="0.3" drill="0.3">
 <clearance class="1" value="0.2"/>
 </class>
-<class number="2" name="9v" width="0.4" drill="0.254">
+<class number="2" name="9v" width="0.39878125" drill="0.39878125">
 <clearance class="2" value="0.3"/>
 </class>
 </classes>
