@@ -971,7 +971,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="ATMEGA" library="SparkFun-IC-Microcontroller" library_urn="urn:adsk.eagle:library:525" package="TQFP32-08" package3d_urn="urn:adsk.eagle:package:38945/1" value="ATMEGA328P_TQFP" x="16.51" y="19.05" smashed="yes" rot="R45">
-<attribute name="NAME" x="16.959015625" y="18.600984375" size="0.762" layer="25" font="vector" ratio="20" rot="R45" align="bottom-center"/>
+<attribute name="NAME" x="16.959015625" y="18.600984375" size="0.762" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="PROD_ID" value="IC-09069" x="16.51" y="19.05" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="21.000128125" y="14.559871875" size="0.6096" layer="27" font="vector" ratio="20" rot="R45" align="bottom-center"/>
 </element>

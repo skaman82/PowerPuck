@@ -3,7 +3,7 @@
 <eagle version="9.0.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -1133,6 +1133,12 @@ design rules under a new name.</description>
 <element name="C7" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="18pF" x="7.62" y="8.89" rot="MR0">
 <attribute name="PROD_ID" value="CAP-00867" x="7.62" y="8.89" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
+<element name="G" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27" x="-8.89" y="-6.35">
+<attribute name="TP_SIGNAL_NAME" value="" x="-8.89" y="-6.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="5V" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27" x="-8.89" y="-11.43">
+<attribute name="TP_SIGNAL_NAME" value="" x="-8.89" y="-11.43" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -1172,6 +1178,31 @@ design rules under a new name.</description>
 <contactref element="BTO" pad="MP"/>
 <via x="11.43" y="8.89" extent="1-16" drill="0.35"/>
 <via x="15.24" y="20.32" extent="1-16" drill="0.35"/>
+<contactref element="G" pad="TP"/>
+<wire x1="34.52" y1="21.844" x2="34.52" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="34.52" y1="18.2372" x2="34.52" y2="21.844" width="0" layer="19" extent="1-1"/>
+<wire x1="36.83" y1="19.05" x2="34.52" y2="18.2372" width="0" layer="19" extent="1-16"/>
+<wire x1="34.52" y1="14.732" x2="34.52" y2="18.2372" width="0" layer="19" extent="1-1"/>
+<wire x1="32.3088" y1="28.448" x2="34.52" y2="25.4" width="0" layer="19" extent="1-1"/>
+<wire x1="30.48" y1="11.43" x2="34.52" y2="14.732" width="0" layer="19" extent="1-16"/>
+<wire x1="27.52" y1="19.05" x2="34.52" y2="18.2372" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="24.13" x2="27.52" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="19.26248125" y1="22.36816875" x2="26.67" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="15.24" y1="20.32" x2="19.26248125" y2="22.36816875" width="0" layer="19" extent="1-1"/>
+<wire x1="12.62614375" y1="16.8632" x2="15.24" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="13.757515625" y1="15.731828125" x2="12.62614375" y2="16.8632" width="0" layer="19" extent="1-1"/>
+<wire x1="11.19" y1="12.34" x2="13.757515625" y2="15.731828125" width="0" layer="19" extent="1-16"/>
+<wire x1="9.31" y1="13.716" x2="11.19" y2="12.34" width="0" layer="19" extent="1-16"/>
+<wire x1="9.31" y1="10.4648" x2="11.19" y2="12.34" width="0" layer="19" extent="1-16"/>
+<wire x1="11.43" y1="8.89" x2="9.31" y2="10.4648" width="0" layer="19" extent="1-1"/>
+<wire x1="6.77" y1="8.89" x2="9.31" y2="10.4648" width="0" layer="19" extent="1-16"/>
+<wire x1="6.35" y1="8.89" x2="6.77" y2="8.89" width="0" layer="19" extent="16-16"/>
+<wire x1="6.35" y1="8.738" x2="6.35" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="12.28" y1="27.94" x2="15.24" y2="20.32" width="0" layer="19" extent="16-16"/>
+<wire x1="21.17" y1="10.668" x2="13.757515625" y2="15.731828125" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.048" y1="19.05" x2="9.31" y2="13.716" width="0" layer="19" extent="1-16"/>
+<wire x1="-1.27" y1="29.718" x2="-3.048" y2="19.05" width="0" layer="19" extent="1-16"/>
+<wire x1="-8.89" y1="-6.35" x2="6.35" y2="8.738" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RED">
 <contactref element="D1" pad="A"/>
@@ -1407,6 +1438,8 @@ design rules under a new name.</description>
 <wire x1="20.25" y1="19.53" x2="14.94" y2="24.84" width="0.3" layer="16"/>
 <wire x1="14.94" y1="30.42" x2="14.9" y2="30.48" width="0.3" layer="16"/>
 <via x="20.25" y="19.53" extent="1-16" drill="0.35"/>
+<contactref element="5V" pad="TP"/>
+<wire x1="-8.89" y1="-11.43" x2="10.89" y2="13.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="ATMEGA" pad="28"/>

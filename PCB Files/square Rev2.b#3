@@ -1183,6 +1183,8 @@ design rules under a new name.</description>
 <via x="11.43" y="8.89" extent="1-16" drill="0.35"/>
 <via x="15.24" y="20.32" extent="1-16" drill="0.35"/>
 <contactref element="G" pad="TP"/>
+<via x="-3.81" y="29.21" extent="1-16" drill="0.35"/>
+<via x="-3.81" y="27.94" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="RED">
 <contactref element="D1" pad="A"/>

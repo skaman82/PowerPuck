@@ -1114,10 +1114,10 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="CAP-00867" x="10.16" y="13.716" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="10.16" y="14.478" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
-<element name="SW" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27" x="22.86" y="13.97" smashed="yes" rot="MR180">
-<attribute name="NAME" x="22.225" y="12.954" size="0.762" layer="26" font="vector" ratio="10" rot="MR180"/>
-<attribute name="TP_SIGNAL_NAME" value="" x="22.225" y="15.875" size="1" layer="38" rot="MR180"/>
-<attribute name="VALUE" x="22.225" y="14.732" size="0.0254" layer="28" rot="MR180"/>
+<element name="SW" library="testpad" library_urn="urn:adsk.eagle:library:385" package="B1,27" package3d_urn="urn:adsk.eagle:package:27944/1" value="TPB1,27" x="20.32" y="16.51" smashed="yes" rot="MR180">
+<attribute name="NAME" x="19.685" y="15.494" size="0.762" layer="26" font="vector" ratio="10" rot="MR180"/>
+<attribute name="TP_SIGNAL_NAME" value="" x="19.685" y="18.415" size="1" layer="38" rot="MR180"/>
+<attribute name="VALUE" x="19.685" y="17.272" size="0.0254" layer="28" rot="MR180"/>
 </element>
 <element name="LM1117" library="lm1117_10" package="SOT223" value="LM1117MP-5.0" x="8.89" y="15.24" smashed="yes" rot="MR0">
 <attribute name="MF" value="Texas Instruments" x="8.89" y="15.24" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -1519,10 +1519,10 @@ design rules under a new name.</description>
 <wire x1="20.34" y1="15.75" x2="20.34" y2="15.84" width="0.2" layer="1"/>
 <wire x1="21.33" y1="14.76" x2="20.34" y2="15.75" width="0.2" layer="1"/>
 <wire x1="21.96" y1="14.76" x2="21.33" y2="14.76" width="0.2" layer="1"/>
-<wire x1="22.68" y1="14.04" x2="21.96" y2="14.76" width="0.2" layer="16"/>
-<wire x1="22.86" y1="14.04" x2="22.68" y2="14.04" width="0.2" layer="16"/>
+<wire x1="21.77" y1="15.17" x2="21.96" y2="14.76" width="0.2" layer="16"/>
+<wire x1="20.32" y1="16.58" x2="21.77" y2="15.17" width="0.2" layer="16"/>
 <wire x1="19.89" y1="16.29" x2="19.82816875" y2="16.297515625" width="0.2" layer="1"/>
-<wire x1="22.86" y1="14.04" x2="22.86" y2="13.97" width="0.2" layer="16"/>
+<wire x1="20.32" y1="16.58" x2="20.32" y2="16.51" width="0.2" layer="16"/>
 <via x="21.96" y="14.76" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="RAW" class="2">

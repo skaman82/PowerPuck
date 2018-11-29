@@ -1172,8 +1172,6 @@ design rules under a new name.</description>
 <contactref element="BTO" pad="MP"/>
 <via x="11.43" y="8.89" extent="1-16" drill="0.35"/>
 <via x="15.24" y="20.32" extent="1-16" drill="0.35"/>
-<wire x1="34.52" y1="18.2372" x2="36.83" y2="19.05" width="0" layer="19" extent="1-16"/>
-<wire x1="27.52" y1="19.05" x2="26.67" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RED">
 <contactref element="D1" pad="A"/>
