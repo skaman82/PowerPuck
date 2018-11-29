@@ -166,15 +166,15 @@
 <vertex x="2.54" y="2.54"/>
 </polygon>
 <text x="0" y="19.05" size="1.016" layer="21" font="vector" ratio="10" rot="R180">REV1</text>
-<wire x1="-8.89" y1="16.51" x2="-8.89" y2="28.68395625" width="0.1524" layer="20"/>
-<wire x1="-8.89" y1="28.68395625" x2="-4.55395625" y2="33.02" width="0.1524" layer="20" curve="-90"/>
-<wire x1="-4.55395625" y1="33.02" x2="36.30395625" y2="33.02" width="0.1524" layer="20"/>
+<wire x1="-6.35" y1="16.51" x2="-6.35" y2="28.68395625" width="0.1524" layer="20"/>
+<wire x1="-6.35" y1="28.68395625" x2="-2.01395625" y2="33.02" width="0.1524" layer="20" curve="-90"/>
+<wire x1="-2.01395625" y1="33.02" x2="36.30395625" y2="33.02" width="0.1524" layer="20"/>
 <wire x1="36.30395625" y1="33.02" x2="40.64" y2="28.68395625" width="0.1524" layer="20" curve="-90"/>
 <wire x1="40.64" y1="28.68395625" x2="40.64" y2="10.68604375" width="0.1524" layer="20"/>
 <wire x1="40.64" y1="10.68604375" x2="36.30395625" y2="6.35" width="0.1524" layer="20" curve="-90"/>
 <wire x1="36.30395625" y1="6.35" x2="3.81" y2="6.35" width="0.1524" layer="20"/>
 <wire x1="3.81" y1="6.35" x2="3.81" y2="16.51" width="0.1524" layer="20"/>
-<wire x1="3.81" y1="16.51" x2="-8.89" y2="16.51" width="0.1524" layer="20"/>
+<wire x1="3.81" y1="16.51" x2="-6.35" y2="16.51" width="0.1524" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-IC-Microcontroller" urn="urn:adsk.eagle:library:525">
@@ -1140,7 +1140,7 @@ design rules under a new name.</description>
 <element name="1K1" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="" x="16.51" y="19.05" rot="MR0">
 <attribute name="PROD_ID" value="RES-08787" x="16.51" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
-<element name="1K2" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="" x="16.51" y="21.59" rot="MR0">
+<element name="1K" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" package="0603" package3d_urn="urn:adsk.eagle:package:39650/1" value="" x="16.51" y="21.59" rot="MR0">
 <attribute name="PROD_ID" value="RES-08787" x="16.51" y="21.59" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 </elements>
@@ -1510,7 +1510,7 @@ design rules under a new name.</description>
 <via x="13.5" y="20.34" extent="1-16" drill="0.35"/>
 <wire x1="12.62614375" y1="21.236796875" x2="12.69" y2="21.172940625" width="0.1524" layer="1"/>
 <wire x1="12.69" y1="21.172940625" x2="12.69" y2="21.15" width="0.1524" layer="1"/>
-<contactref element="1K2" pad="2"/>
+<contactref element="1K" pad="2"/>
 <wire x1="13.5" y1="20.34" x2="14.75" y2="21.59" width="0.1524" layer="16"/>
 <wire x1="14.75" y1="21.59" x2="15.66" y2="21.59" width="0.1524" layer="16"/>
 </signal>
@@ -1657,7 +1657,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$3">
 <contactref element="FTDIPORT" pad="4"/>
-<contactref element="1K2" pad="1"/>
+<contactref element="1K" pad="1"/>
 <wire x1="30.02" y1="11.43" x2="30.0162" y2="11.7762" width="0.1524" layer="16"/>
 <wire x1="30.0162" y1="11.7762" x2="29.5562" y2="12.79560625" width="0.1524" layer="16"/>
 <wire x1="29.5562" y1="12.79560625" x2="27.11180625" y2="15.24" width="0.1524" layer="16"/>
