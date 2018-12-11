@@ -1,9 +1,38 @@
 # PowerPuck
 
-More info soon…
+
 
 # MAIN UNIT COMPONENTS
-<b>comming soon…</b>
+
+<b>Printed Case</b></br>
+See 3D files directory</br></br>
+
+
+<b>ATMEGA382 AU</b></br>
+<b>Y1: Xtal 16MHZ TXC 7A-16.000MAAJ-T</b></br>
+<b>C1, C5:  100nF cap 0603</b></br>
+<b>C3, C4:  18pF cap 0603</b></br>
+<b>10K 0603 Resistor</b></br>
+<b>4x 330Ohm 0603 Resistor</b></br>
+<b>D2-D4: 3x GREEN LED 1206</b></br>
+<b>D1: 1x RED LED 1206</b></br>
+<b>R1: 18K Resistor 1206</b></br>
+<b>R2: 4,7K Resistor 1206</b></br>
+<b>C6, C7: 10uF Cap 1206</b></br>
+<b>D6: Diode S1A</b></br>
+<b>JST-SH Jack 6pin</b></br>
+<b>9mm active Buzzer</b></br>
+<b>8mm tact button</b></br>
+<b>XT30 female plug</b></br>
+<b>AMS1117/LM1117 regulator</b></br></br>
+
+<b>ISCP USB Programmer like</b></br>
+https://de.aliexpress.com/item/5-v-Micro-USB-Tiny-AVR-ISP-ATtiny44-USBTinyISP-Programmierer-Modul-F-r-Bootloader-ISP-Mikrocontroller/32925343387.html?spm=a2g0s.9042311.0.0.725e4c4dZq4br5</br></br>
+
+
+
+
+
 
 # 18650 CASE COMPONENTS
 <b>Printed Case</b></br>
