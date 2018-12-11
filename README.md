@@ -8,6 +8,8 @@
 <b>Printed Case</b></br>
 See 3D files directory</br></br>
 
+<b>Order the PCB on jlcpcb.com</b></br>
+See "PCB Files > Final Gerber" directory</br></br>
 
 <b>ATMEGA382 AU</b></br>
 <b>Y1: Xtal 16MHZ TXC 7A-16.000MAAJ-T</b></br>
@@ -21,11 +23,16 @@ See 3D files directory</br></br>
 <b>R2: 4,7K Resistor 1206</b></br>
 <b>C6, C7: 10uF Cap 1206</b></br>
 <b>D6: Diode S1A</b></br>
+<b>Pololu 9V Step-Up Voltage Regulator U3V12F9</b></br>
+<b>Pololu Mini Pushbutton Power Switch SV</b></br>
 <b>JST-SH Jack 6pin</b></br>
 <b>9mm active Buzzer</b></br>
 <b>8mm tact button</b></br>
 <b>XT30 female plug</b></br>
+
 <b>AMS1117/LM1117 regulator</b></br></br>
+
+
 
 <b>ISCP USB Programmer like</b></br>
 https://de.aliexpress.com/item/5-v-Micro-USB-Tiny-AVR-ISP-ATtiny44-USBTinyISP-Programmierer-Modul-F-r-Bootloader-ISP-Mikrocontroller/32925343387.html?spm=a2g0s.9042311.0.0.725e4c4dZq4br5</br></br>
