@@ -3,6 +3,7 @@
 
 
 # MAIN UNIT COMPONENTS
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/PCB%20Files/Final%20Gerber/square%20Rev22.jpg"/>
 
 <b>Printed Case</b></br>
 See 3D files directory</br></br>
