@@ -13,8 +13,9 @@ See "PCB Files > Final Gerber" directory</br></br>
 
 <b>ATMEGA382 AU</b></br>
 <b>Y1: Xtal 16MHZ TXC 7A-16.000MAAJ-T</b></br>
-<b>C1, C5:  100nF cap 0603</b></br>
-<b>C3, C4:  18pF cap 0603</b></br>
+<b>C1: 0,1uF cap 0603</b></br>
+<b>C5: 100nF cap 0603</b></br>
+<b>C3, C4: 18pF cap 0603</b></br>
 <b>10K 0603 Resistor</b></br>
 <b>4x 330Ohm 0603 Resistor</b></br>
 <b>D2-D4: 3x GREEN LED 1206</b></br>
