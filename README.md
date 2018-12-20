@@ -1,4 +1,8 @@
 # PowerPuck
+I started this project because I was tired of my fatshark beeping and shutting down at 3.6 volts. I am using a 2s 18650 3500mAh pack. This means my batteries are still almost half full when this happens. I first just used a 9v stepup to boost the voltage, but then tracking the battery level was a pain. Then I came up with this solution. 
+
+It not only lets you use your 18650 batteries up to 3v (per cell), it also adds voltage monitoring with adjustable alarms and a power on/off switch. On top of that the fan cable is now tidy and nice and the complete unit remains on the goggles the whole time while the battery is sitting in the pocket or on the belt.
+
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit.jpg"/>
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation.jpg"/>
