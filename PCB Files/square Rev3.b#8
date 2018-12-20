@@ -178,7 +178,7 @@
 <vertex x="3.81" y="2.54"/>
 <vertex x="2.54" y="2.54"/>
 </polygon>
-<text x="0" y="19.05" size="1.016" layer="21" font="vector" ratio="10" rot="R180">REV2.1</text>
+<text x="0" y="19.05" size="1.016" layer="21" font="vector" ratio="10" rot="R180">REV2.2</text>
 <wire x1="-6.35" y1="16.51" x2="-6.35" y2="28.68395625" width="0.1524" layer="20"/>
 <wire x1="-6.35" y1="28.68395625" x2="-2.01395625" y2="33.02" width="0.1524" layer="20" curve="-90"/>
 <wire x1="-2.01395625" y1="33.02" x2="26.67" y2="33.02" width="0.1524" layer="20"/>
@@ -2263,6 +2263,7 @@ design rules under a new name.</description>
 <via x="35.56" y="30.48" extent="1-16" drill="0.35"/>
 <via x="36.83" y="30.48" extent="1-16" drill="0.35"/>
 <via x="29.21" y="26.67" extent="1-16" drill="0.35"/>
+<via x="16.764" y="19.685" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="RED">
 <contactref element="D1" pad="A"/>
@@ -2636,7 +2637,8 @@ design rules under a new name.</description>
 <wire x1="13.15085" y1="16.28775" x2="13.191828125" y2="16.297515625" width="0.3048" layer="1"/>
 <wire x1="9.8933" y1="20.7518" x2="8.9281" y2="20.7518" width="0.3048" layer="1"/>
 <wire x1="14.83995" y1="25.69845" x2="9.8933" y2="20.7518" width="0.3048" layer="1"/>
-<wire x1="18.21815" y1="25.69845" x2="14.83995" y2="25.69845" width="0.3048" layer="1"/>
+<wire x1="18.21815" y1="25.69845" x2="15.08125" y2="25.69845" width="0.3048" layer="1"/>
+<wire x1="15.08125" y1="25.69845" x2="14.83995" y2="25.69845" width="0.3048" layer="1"/>
 <wire x1="21.9583" y1="21.9583" x2="18.21815" y2="25.69845" width="0.3048" layer="1"/>
 <wire x1="21.9583" y1="21.83765" x2="21.9583" y2="21.9583" width="0.3048" layer="1"/>
 <wire x1="21.59635" y1="21.4757" x2="21.9583" y2="21.83765" width="0.3048" layer="1"/>
@@ -2674,7 +2676,10 @@ design rules under a new name.</description>
 <wire x1="9.1694" y1="12.5476" x2="8.9281" y2="12.5476" width="0.3048" layer="16"/>
 <via x="9.1694" y="12.5476" extent="1-16" drill="0.35"/>
 <contactref element="5V" pad="TP"/>
-<wire x1="14.83995" y1="25.69845" x2="13.97" y2="30.48" width="0" layer="19" extent="1-1"/>
+<wire x1="13.9954" y1="29.55925" x2="13.9954" y2="30.4038" width="0.3048" layer="1"/>
+<wire x1="15.08125" y1="28.4734" x2="13.9954" y2="29.55925" width="0.3048" layer="1"/>
+<wire x1="15.08125" y1="25.69845" x2="15.08125" y2="28.4734" width="0.3048" layer="1"/>
+<wire x1="13.9954" y1="30.4038" x2="13.97" y2="30.48" width="0.3048" layer="1"/>
 </signal>
 <signal name="BUTTON">
 <contactref element="ATMEGA" pad="11"/>

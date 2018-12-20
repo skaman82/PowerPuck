@@ -634,6 +634,23 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
+<package name="1206" urn="urn:adsk.eagle:footprint:37399/1" library_version="1">
+<description>&lt;p&gt;&lt;b&gt;Generic 3216 (1206) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="-1.1" x2="-2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-2.4" y1="-1.1" x2="-2.4" y2="1.1" width="0.0508" layer="39"/>
+<wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
 <package name="0603" urn="urn:adsk.eagle:footprint:37386/1" library_version="1">
 <description>&lt;p&gt;&lt;b&gt;Generic 1608 (0603) package&lt;/b&gt;&lt;/p&gt;
 &lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
@@ -653,6 +670,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 <packages3d>
+<package3d name="1206" urn="urn:adsk.eagle:package:37426/1" type="box" library_version="1">
+<description>Generic 3216 (1206) package
+0.2mm courtyard excess rounded to nearest 0.05mm.</description>
+<packageinstances>
+<packageinstance name="1206"/>
+</packageinstances>
+</package3d>
 <package3d name="0603" urn="urn:adsk.eagle:package:37414/1" type="box" library_version="1">
 <description>Generic 1608 (0603) package
 0.2mm courtyard excess rounded to nearest 0.05mm.</description>
@@ -2197,8 +2221,8 @@ design rules under a new name.</description>
 <attribute name="OC_NEWARK" value="28X3417" x="8.89" y="11.43" size="1.778" layer="28" rot="MR180" display="off"/>
 <attribute name="VALUE" x="13.84" y="13.13" size="1.27" layer="28" rot="MR270"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="0603" package3d_urn="urn:adsk.eagle:package:37414/1" value="10uF" x="13.97" y="8.89" rot="MR180">
-<attribute name="PROD_ID" value="CAP-00867" x="13.97" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="C6" library="SparkFun-Capacitors" library_urn="urn:adsk.eagle:library:510" package="1206" package3d_urn="urn:adsk.eagle:package:37426/1" value="10uF" x="15.24" y="8.89" rot="MR180">
+<attribute name="PROD_ID" value="CAP-10057" x="15.24" y="8.89" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF" x="6.35" y="19.05" rot="MR180">
 <attribute name="SPICEPREFIX" value="C" x="6.35" y="19.05" size="1.778" layer="28" rot="MR180" display="off"/>
@@ -2655,18 +2679,18 @@ design rules under a new name.</description>
 <wire x1="20.87245" y1="20.63115" x2="20.9595375" y2="20.6711125" width="0.3048" layer="1"/>
 <wire x1="9.29005" y1="8.9281" x2="13.0302" y2="8.9281" width="0.3048" layer="16"/>
 <wire x1="8.9281" y1="8.56615" x2="9.29005" y2="8.9281" width="0.3048" layer="16"/>
-<wire x1="13.0302" y1="8.9281" x2="13.12" y2="8.89" width="0.3048" layer="16"/>
+<wire x1="13.0302" y1="8.9281" x2="13.84" y2="8.89" width="0.3048" layer="16"/>
 <wire x1="8.9281" y1="8.56615" x2="8.89" y2="8.53" width="0.3048" layer="16"/>
 <wire x1="28.4734" y1="12.18565" x2="28.4734" y2="11.46175" width="0.3048" layer="16"/>
 <wire x1="27.62885" y1="13.0302" x2="28.4734" y2="12.18565" width="0.3048" layer="16"/>
 <wire x1="27.5082" y1="13.0302" x2="27.62885" y2="13.0302" width="0.3048" layer="16"/>
 <wire x1="27.38755" y1="13.15085" x2="27.5082" y2="13.0302" width="0.3048" layer="16"/>
-<wire x1="16.6497" y1="13.15085" x2="27.38755" y2="13.15085" width="0.3048" layer="16"/>
-<wire x1="13.2715" y1="9.77265" x2="16.6497" y2="13.15085" width="0.3048" layer="16"/>
-<wire x1="13.2715" y1="9.29005" x2="13.2715" y2="9.77265" width="0.3048" layer="16"/>
-<wire x1="13.0302" y1="9.04875" x2="13.2715" y2="9.29005" width="0.3048" layer="16"/>
+<wire x1="17.9197" y1="13.15085" x2="27.38755" y2="13.15085" width="0.3048" layer="16"/>
+<wire x1="14.5415" y1="9.77265" x2="17.9197" y2="13.15085" width="0.3048" layer="16"/>
+<wire x1="14.5415" y1="9.29005" x2="14.5415" y2="9.77265" width="0.3048" layer="16"/>
+<wire x1="14.3002" y1="9.04875" x2="14.5415" y2="9.29005" width="0.3048" layer="16"/>
 <wire x1="28.4734" y1="11.46175" x2="28.48" y2="11.43" width="0.3048" layer="16"/>
-<wire x1="13.0302" y1="9.04875" x2="13.12" y2="8.89" width="0.3048" layer="16"/>
+<wire x1="14.3002" y1="9.04875" x2="13.84" y2="8.89" width="0.3048" layer="16"/>
 <wire x1="8.9281" y1="9.4107" x2="8.9281" y2="12.5476" width="0.3048" layer="16"/>
 <wire x1="8.9281" y1="12.5476" x2="8.9281" y2="14.2367" width="0.3048" layer="16"/>
 <wire x1="9.29005" y1="9.04875" x2="8.9281" y2="9.4107" width="0.3048" layer="16"/>
