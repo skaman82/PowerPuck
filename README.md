@@ -31,7 +31,7 @@ See "PCB Files > Final Gerber" directory</br></br>
 <b>9mm active Buzzer</b></br>
 <b>8mm tact button</b></br>
 <b>XT30 female plug</b></br>
-
+wiring
 <b>AMS1117/LM1117 regulator</b></br></br>
 
 
@@ -40,6 +40,7 @@ See "PCB Files > Final Gerber" directory</br></br>
 https://de.aliexpress.com/item/5-v-Micro-USB-Tiny-AVR-ISP-ATtiny44-USBTinyISP-Programmierer-Modul-F-r-Bootloader-ISP-Mikrocontroller/32925343387.html?spm=a2g0s.9042311.0.0.725e4c4dZq4br5</br></br>
 
 
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/wiring.jpg"/>
 
 
 
