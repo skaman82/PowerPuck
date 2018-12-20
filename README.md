@@ -1,7 +1,9 @@
 # PowerPuck
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit.jpg"/>
+
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation.jpg"/>
 
-
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/soldered.jpg"/>
 
 # MAIN UNIT COMPONENTS
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/PCB%20Files/Final%20Gerber/square%20Rev22.jpg"/>
@@ -62,3 +64,6 @@ https://www.banggood.com/de/Tarot-RC-Helicopter-Part-Amass-One-Pair-XT30-Non-sli
 <b>2S Balance plug</b></br>
 https://www.banggood.com/de/Lipo-Battery-Balance-Charging-Extension-Wire-Cable-20cm-2S-3S-4S-6S-p-951866.html?p=03160313547712015036
 </br>
+
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/case1.jpg"/>
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/case2.jpg"/>
