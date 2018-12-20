@@ -33,8 +33,8 @@ See "PCB Files > Final Gerber" directory</br></br>
 <b>9mm active Buzzer</b></br>
 <b>8mm tact button</b></br>
 <b>XT30 female plug</b></br>
-wiring
-<b>AMS1117/LM1117 regulator</b></br></br>
+<b>AMS1117/LM1117 regulator</b></br>
+<b>Epoxy</b></br></br>
 
 
 
@@ -64,6 +64,7 @@ https://www.banggood.com/de/Tarot-RC-Helicopter-Part-Amass-One-Pair-XT30-Non-sli
 <b>2S Balance plug</b></br>
 https://www.banggood.com/de/Lipo-Battery-Balance-Charging-Extension-Wire-Cable-20cm-2S-3S-4S-6S-p-951866.html?p=03160313547712015036
 </br>
+<b>Epoxy</b></br></br>
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/case1.jpg"/>
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/case2.jpg"/>
