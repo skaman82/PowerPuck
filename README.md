@@ -3,6 +3,8 @@ I started this project because I was tired of my fatshark beeping and shutting d
 
 It not only lets you use your 18650 batteries up to 3v (per cell), it also adds voltage monitoring with adjustable alarms and a power on/off switch. On top of that the fan cable is now tidy and nice and the complete unit remains on the goggles the whole time while the battery is sitting in the pocket or on the belt.
 
+The battery case has also a basic battery indicator - it gives a pretty good orientation of the battery state without hooking the battery up. 
+
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit.jpg"/>
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation.jpg"/>
