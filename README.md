@@ -21,7 +21,7 @@ https://www.shapeways.com/product/Y7TP35MAT/powerpuck-case-front</br>
 https://www.shapeways.com/product/XVMKZEAJ4/powerpuck-case-back</br>
 </br></br>
 
-<b>Order the PCB on jlcpcb.com</b></br>
+<b>Order the PCB on jlcpcb.com (1mm thickness)</b></br>
 See "PCB Files > Final Gerber" directory</br></br>
 
 <b>ATMEGA382 AU</b></br>
