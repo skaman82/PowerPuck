@@ -29,14 +29,14 @@ See "PCB Files > Final Gerber" directory</br></br>
 <b>Y1: Xtal 16MHZ TXC 7A-16.000MAAJ-T</b></br>
 <b>C1: 0,1uF cap 0603</b></br>
 <b>C5: 100nF cap 0603</b></br>
-<b>C3, C4: 18pF cap 0603</b></br>
+<b>C3, C4: 18pF cap 0603 (2x)</b></br>
 <b>10K 0603 Resistor</b></br>
-<b>4x 330Ohm 0603 Resistor</b></br>
-<b>D2-D4: 3x GREEN LED 1206</b></br>
+<b>R3-R6: 330Ohm 0603 Resistor (4x)</b></br>
+<b>D2-D4: GREEN LED 1206 (3x)</b></br>
 <b>D1: 1x RED LED 1206</b></br>
 <b>R1: 18K Resistor 1206</b></br>
 <b>R2: 4,7K Resistor 1206</b></br>
-<b>C6, C7: 10uF Cap 1206</b></br>
+<b>C6, C7: 10uF Cap 1206 (2x)</b></br>
 <b>D6: Diode S1A</b></br>
 <b>Pololu 9V Step-Up Voltage Regulator U3V12F9</b></br>
 <b>Pololu Mini Pushbutton Power Switch SV</b></br>
