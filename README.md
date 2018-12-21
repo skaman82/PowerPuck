@@ -15,7 +15,11 @@ The battery case has also a basic battery indicator - it gives a pretty good ori
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/PCB%20Files/Final%20Gerber/square%20Rev22.jpg"/>
 
 <b>Printed Case</b></br>
-See 3D files directory</br></br>
+See 3D files directory</br>
+or order it here:</br>
+https://www.shapeways.com/product/Y7TP35MAT/powerpuck-case-front</br>
+https://www.shapeways.com/product/XVMKZEAJ4/powerpuck-case-back</br>
+</br></br>
 
 <b>Order the PCB on jlcpcb.com</b></br>
 See "PCB Files > Final Gerber" directory</br></br>
