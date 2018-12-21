@@ -9,7 +9,7 @@ The battery case has also a basic battery indicator - it gives a pretty good ori
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit2.jpg"/>
 
 
-<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation.jpg"/>
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation_f.jpg"/>
 
 
 # MAIN UNIT COMPONENTS
