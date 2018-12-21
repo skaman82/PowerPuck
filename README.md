@@ -6,10 +6,11 @@ It not only lets you use your 18650 batteries up to 3v (per cell), it also adds 
 The battery case has also a basic battery indicator - it gives a pretty good orientation of the battery state without hooking the battery up. 
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit.jpg"/>
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/unit2.jpg"/>
+
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/operation.jpg"/>
 
-<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/soldered.jpg"/>
 
 # MAIN UNIT COMPONENTS
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/PCB%20Files/Final%20Gerber/square%20Rev22.jpg"/>
@@ -55,6 +56,8 @@ https://de.aliexpress.com/item/5-v-Micro-USB-Tiny-AVR-ISP-ATtiny44-USBTinyISP-Pr
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/wiring.jpg"/>
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/iscp.jpg"/>
+
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/soldered.jpg"/>
 
 
 
