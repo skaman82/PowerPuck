@@ -4,15 +4,15 @@
 
 */
 #include <EEPROM.h>
-#include "U8glib.h"
-U8GLIB_SSD1306_128X32 u8g(U8G_I2C_OPT_NONE);  // I2C / TWI
 
+
+//#define OLED
 
 #define Voltagedetect          3.25 // Min. voltage for Detection
 #define max_cellvoltage        4.25 // Max. cell voltage
-#define R1                   18000  // Resistor 1
+#define R1                   17800  // Resistor 1
 #define R2                    4700  // Resistor 2 (measured)
-#define VOLT_SENS               A0  // Voltage Sensor
+#define VOLT_SENS               A1  // Voltage Sensor
 #define BUTTON_PIN               7  // Button
 #define longpresstime         1000  // in ms
 #define alarmADDR                1  // EEPROM Adress
@@ -45,8 +45,17 @@ int32_t powermode = 1;
 int32_t buttoncount = 0;
 unsigned long presstime = 0;
 
+#ifdef OLED 
+#include "U8glib.h"
+U8GLIB_SSD1306_128X32 u8g(U8G_I2C_OPT_NONE);  // I2C / TWI
+#endif
+
+
 
 void setup() {
+
+ 
+  analogReference(DEFAULT);
 
   pinMode(3, OUTPUT); //LED red
   pinMode(4, OUTPUT); //LED green1
@@ -78,66 +87,45 @@ void setup() {
   digitalWrite(8, LOW);
   
   digitalWrite(3, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(4, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(5, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(6, HIGH);   // turn the LED on (HIGH is the voltage level)
-  delay (150);
+  delay (250);
   digitalWrite(6, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(5, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(4, LOW);   // turn the LED on (HIGH is the voltage level)
-  delay (50);
+  delay (100);
   digitalWrite(3, LOW);   // turn the LED on (HIGH is the voltage level)
   delay (250);
 
-
+ 
   voltagetest();
+  lipo = 2;
   
 
-  if (voltage > (Voltagedetect * 5.0))
-  {
-    lipo = 5;
-    //beep_x(lipo);
-  }
-  else if (voltage > (Voltagedetect * 4.0))
-  {
-    lipo = 4;
-    //beep_x(lipo);
-  }
-  else if (voltage > (Voltagedetect * 3.0))
-  {
-    lipo = 3;
-    // beep_x(lipo);
-  }
-  else if (voltage > (Voltagedetect * 2.0))
-  {
-    lipo = 2;
-    //beep_x(lipo);
-  }
-  else
-  {
-    lipo = 2;
-    // beep_x(lipo);
-  }
+#ifdef OLED 
 
+    if ( u8g.getMode() == U8G_MODE_R3G3B2 ) {
+      u8g.setColorIndex(255);     // white
+    }
+    else if ( u8g.getMode() == U8G_MODE_GRAY2BIT ) {
+      u8g.setColorIndex(3);         // max intensity
+    }
+    else if ( u8g.getMode() == U8G_MODE_BW ) {
+      u8g.setColorIndex(1);         // pixel on
+    }
+    else if ( u8g.getMode() == U8G_MODE_HICOLOR ) {
+      u8g.setHiColorByRGB(255, 255, 255);
+    }
 
-
-  if ( u8g.getMode() == U8G_MODE_R3G3B2 ) {
-    u8g.setColorIndex(255);     // white
-  }
-  else if ( u8g.getMode() == U8G_MODE_GRAY2BIT ) {
-    u8g.setColorIndex(3);         // max intensity
-  }
-  else if ( u8g.getMode() == U8G_MODE_BW ) {
-    u8g.setColorIndex(1);         // pixel on
-  }
-  else if ( u8g.getMode() == U8G_MODE_HICOLOR ) {
-    u8g.setHiColorByRGB(255, 255, 255);
-  }
+  clearOLED();
+  
+  #endif
 }
 
 
@@ -148,12 +136,12 @@ void voltagetest()
 
   int sensorValue = analogRead(VOLT_SENS); // read the input on analog pin 0:
 
-  voltage = sensorValue * (5.00 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
-
+  voltage = sensorValue * (6.05 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
+  // use 6.00 for direct lipo and 6.05 for packs with bms and extension cable
   //voltage = round(voltage * 10) / 10.0; //round the result
   VoltageByte = voltage * 10;
 
-  cellvoltage = voltage / lipo;
+  cellvoltage = voltage / 2;
 
   float cellfull = (max_cellvoltage) - (alarmvalue); //determine 100% of travel scale
   float cellstate = (max_cellvoltage) - (cellvoltage); //determine the actual cell delta value
@@ -189,7 +177,7 @@ void voltagetest()
       battery_health = 2;
     }
   }
-  else if (battery_state >= 5 && battery_state < 25)
+  else if (battery_state >5 && battery_state < 25)
   {
     unsigned long currenthealthtime = millis();
 
@@ -199,7 +187,7 @@ void voltagetest()
       battery_health = 1;
     }
   }
-  else if (battery_state >= 0)
+  else if (battery_state >= 5)
   {
     unsigned long currenthealthtime = millis();
 
@@ -270,7 +258,11 @@ void modecheck () {
           tone(8, NOTE_A6, 200);
           delay(500);
           tone(8, NOTE_C4, 500);
+          
+          #ifdef OLED 
           clearOLED();
+          #endif
+          
           powermode = 0;
         }
         else {
@@ -293,17 +285,26 @@ void modecheck () {
 
 void loop() {
 
-  u8g.firstPage();
-  do {
+#ifdef OLED 
+    u8g.firstPage();
+    do {
     
-    u8g.setFont(u8g_font_unifont);
-    //u8g.setFont(u8g_font_osb21);
-    u8g.setPrintPos(0, 30);
-    u8g.print(voltage);
+       u8g.setFont(u8g_font_unifont);
+       u8g.setPrintPos(0, 30);
+       u8g.print(voltage);
 
-    u8g.setPrintPos(50, 30);
-    u8g.print(buttoncount);
+       u8g.setPrintPos(40, 30);
+       u8g.print(buttoncount);
 
+      u8g.setPrintPos(60, 30);
+      u8g.print(battery_health);
+
+      u8g.setPrintPos(80, 30);
+      u8g.print(lipo);
+
+      u8g.setPrintPos(100, 30);
+      u8g.print(cellvoltage);
+#endif
 
     modecheck();
     buttoncheck();
@@ -378,20 +379,21 @@ void loop() {
 
     Serial.println();
 
-  } while ( u8g.nextPage() );
-
+ #ifdef OLED 
+ } while ( u8g.nextPage() );
+#endif
 }
 
 
+#ifdef OLED 
+  void clearOLED() {
 
-void clearOLED() {
+    u8g.firstPage();
+    do {
+    } while ( u8g.nextPage() );
 
-  u8g.firstPage();
-  do {
-  } while ( u8g.nextPage() );
-
-}
-
+  }
+#endif
 
 void shadowmode() {
 
