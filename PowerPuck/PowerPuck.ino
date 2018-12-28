@@ -6,7 +6,7 @@
 #include <EEPROM.h>
 
 
-//#define OLED
+#define OLED
 
 #define Voltagedetect          3.25 // Min. voltage for Detection
 #define max_cellvoltage        4.25 // Max. cell voltage
@@ -290,20 +290,45 @@ void loop() {
     do {
     
        u8g.setFont(u8g_font_unifont);
-       u8g.setPrintPos(0, 30);
+       u8g.setPrintPos(5, 25);
        u8g.print(voltage);
+       u8g.print("v");
 
-       u8g.setPrintPos(40, 30);
-       u8g.print(buttoncount);
+      
+       u8g.drawFrame(60,9,63,22);
+       u8g.drawBox(122,16,4,8);
 
-      u8g.setPrintPos(60, 30);
-      u8g.print(battery_health);
-
-      u8g.setPrintPos(80, 30);
-      u8g.print(lipo);
-
-      u8g.setPrintPos(100, 30);
-      u8g.print(cellvoltage);
+       if (battery_health == 4) {
+       u8g.drawBox(62,11,14,18); //25%
+       u8g.drawBox(77,11,14,18); //50%
+       u8g.drawBox(92,11,14,18); //75%
+       u8g.drawBox(107,11,14,18); //100%
+       }
+       else if (battery_health == 3) {
+       u8g.drawBox(62,11,14,18); //25%
+       u8g.drawBox(77,11,14,18); //50%
+       u8g.drawBox(92,11,14,18); //75%
+       // u8g.drawBox(107,11,14,18); //100%
+       }
+        else if (battery_health == 2) {
+       u8g.drawBox(62,11,14,18); //25%
+       u8g.drawBox(77,11,14,18); //50%
+       // u8g.drawBox(92,11,14,18); //75%
+       // u8g.drawBox(107,11,14,18); //100%
+       }
+        else if (battery_health == 1) {
+       u8g.drawBox(62,11,14,18); //25%
+       // u8g.drawBox(77,11,14,18); //50%
+       // u8g.drawBox(92,11,14,18); //75%
+       // u8g.drawBox(107,11,14,18); //100%
+       }
+       else if (battery_health == 0) {
+       // u8g.drawBox(62,11,14,18); //25%
+       // u8g.drawBox(77,11,14,18); //50%
+       // u8g.drawBox(92,11,14,18); //75%
+       // u8g.drawBox(107,11,14,18); //100%
+       }
+       
 #endif
 
     modecheck();
@@ -416,6 +441,9 @@ void shadowmode() {
     if (pressedbut == 2)
     {
       menuselect = 1;
+      #ifdef OLED 
+      clearOLED();
+      #endif
       menu();
     }
 
@@ -460,9 +488,21 @@ void alarms() {
 void menu() {
   while (menuselect == 1) {
 
-    Serial.print(alarmvalue);
-    Serial.println();
-
+    // Serial.print(alarmvalue);
+    // Serial.println();
+ #ifdef OLED 
+  
+  u8g.firstPage();
+    do
+        {
+        u8g.setPrintPos(5, 25);
+        u8g.print("Alarm > ");
+        u8g.print(alarmvalue);
+        u8g.print("v");
+        }
+        while (u8g.nextPage());
+ #endif
+    
     buttoncheck();
     digitalWrite(8, LOW);
     unsigned long currenttime = millis();
