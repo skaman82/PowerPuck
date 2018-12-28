@@ -289,44 +289,42 @@ void loop() {
     u8g.firstPage();
     do {
     
-       u8g.setFont(u8g_font_unifont);
-       u8g.setPrintPos(5, 25);
+       u8g.setFont(u8g_font_helvR14r);
+       u8g.setPrintPos(5, 26);
        u8g.print(voltage);
        u8g.print("v");
 
       
-       u8g.drawFrame(60,9,63,22);
+       u8g.drawFrame(59,9,64,22);
        u8g.drawBox(122,16,4,8);
 
        if (battery_health == 4) {
-       u8g.drawBox(62,11,14,18); //25%
-       u8g.drawBox(77,11,14,18); //50%
-       u8g.drawBox(92,11,14,18); //75%
-       u8g.drawBox(107,11,14,18); //100%
+       u8g.drawBox(62,12,13,16); //25%
+       u8g.drawBox(77,12,13,16); //50%
+       u8g.drawBox(92,12,13,16); //75%
+       u8g.drawBox(107,12,13,16); //100%
        }
        else if (battery_health == 3) {
-       u8g.drawBox(62,11,14,18); //25%
-       u8g.drawBox(77,11,14,18); //50%
-       u8g.drawBox(92,11,14,18); //75%
-       // u8g.drawBox(107,11,14,18); //100%
+       u8g.drawBox(62,12,13,16); //25%
+       u8g.drawBox(77,12,13,16); //50%
+       u8g.drawBox(92,12,13,16); //75%
        }
         else if (battery_health == 2) {
-       u8g.drawBox(62,11,14,18); //25%
-       u8g.drawBox(77,11,14,18); //50%
-       // u8g.drawBox(92,11,14,18); //75%
-       // u8g.drawBox(107,11,14,18); //100%
+       u8g.drawBox(62,12,13,16); //25%
+       u8g.drawBox(77,12,13,16); //50%
+
        }
         else if (battery_health == 1) {
-       u8g.drawBox(62,11,14,18); //25%
-       // u8g.drawBox(77,11,14,18); //50%
-       // u8g.drawBox(92,11,14,18); //75%
-       // u8g.drawBox(107,11,14,18); //100%
+       u8g.drawBox(62,12,13,16); //25%
+
        }
        else if (battery_health == 0) {
-       // u8g.drawBox(62,11,14,18); //25%
-       // u8g.drawBox(77,11,14,18); //50%
-       // u8g.drawBox(92,11,14,18); //75%
-       // u8g.drawBox(107,11,14,18); //100%
+
+       
+       u8g.setFont(u8g_font_lucasfont_alternater);
+       u8g.setPrintPos(70, 23);
+       u8g.print("LOW BAT.");
+       
        }
        
 #endif
@@ -350,6 +348,7 @@ void loop() {
       digitalWrite(4, HIGH);
       digitalWrite(5, HIGH);
       digitalWrite(6, HIGH);
+      AlarmState = LOW;
     }
     else if (battery_health == 3)
     {
@@ -357,6 +356,7 @@ void loop() {
       digitalWrite(4, HIGH);
       digitalWrite(5, HIGH);
       digitalWrite(6, LOW);
+      AlarmState = LOW;
     }
     else if (battery_health == 2)
     {
@@ -364,6 +364,7 @@ void loop() {
       digitalWrite(4, HIGH);
       digitalWrite(5, LOW);
       digitalWrite(6, LOW);
+      AlarmState = LOW;
     }
     else if (battery_health == 1)
     {
@@ -371,6 +372,7 @@ void loop() {
       digitalWrite(4, LOW);
       digitalWrite(5, LOW);
       digitalWrite(6, LOW);
+      AlarmState = LOW;
     }
 
     else if (battery_health == 0)
@@ -495,8 +497,15 @@ void menu() {
   u8g.firstPage();
     do
         {
-        u8g.setPrintPos(5, 25);
-        u8g.print("Alarm > ");
+        u8g.setFont(u8g_font_lucasfont_alternater);
+        u8g.setPrintPos(5, 17);
+        u8g.print("ALARM");
+        u8g.setPrintPos(5, 28);
+        u8g.print("SETTING");
+        
+        u8g.setFont(u8g_font_helvR14r);
+        u8g.setPrintPos(58, 26);
+        u8g.print("> ");
         u8g.print(alarmvalue);
         u8g.print("v");
         }
