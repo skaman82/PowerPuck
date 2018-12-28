@@ -5,7 +5,7 @@
 */
 #include <EEPROM.h>
 
-
+// uncomment this if you are usind an OLED screen
 #define OLED
 
 #define Voltagedetect          3.25 // Min. voltage for Detection
