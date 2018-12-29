@@ -43,7 +43,7 @@ See "PCB Files > Final Gerber" directory</br></br>
 <b>JST-SH Jack 6pin</b></br>
 <b>9mm active Buzzer</b></br>
 <b>8mm tact button</b></br>
-<b>XT30 female plug</b></br>
+<b>AMASS XT30 female plug</b></br>
 <b>AMS1117/LM1117 regulator</b></br>
 <b>Epoxy</b></br></br>
 
