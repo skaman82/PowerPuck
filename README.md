@@ -40,7 +40,7 @@ See "PCB Files > Final Gerber" directory</br></br>
 <b>D6: Diode S1A</b></br>
 <b>Pololu 9V Step-Up Voltage Regulator U3V12F9</b></br>
 <b>Pololu Mini Pushbutton Power Switch SV</b></br>
-<b>JST-SH Jack 6pin</b></br>
+<b>JST-SH Socket 6pin</b></br>
 <b>9mm active Buzzer</b></br>
 <b>8mm tact button</b></br>
 <b>AMASS XT30 female plug</b></br>
