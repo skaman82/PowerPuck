@@ -27,7 +27,6 @@ float alarmvalue = 3.40;
 int32_t alarmvalueEEP;
 float cellvoltage;
 int32_t battery_health = 4;
-int32_t VoltageByte;
 int pressedbut = 0;
 int i_butt = 0;
 int mode;
@@ -40,10 +39,15 @@ long interval = 500;
 long interval2 = 1000;
 int MenuState = LOW;
 long menuinterval = 100;
-unsigned long updatetime = 0;
 int32_t powermode = 1;
 int32_t buttoncount = 0;
 unsigned long presstime = 0;
+
+unsigned long updatetime = 0;
+int8_t counter = 0;
+int32_t oldvoltage = 0;
+int32_t samplevoltage = 0;
+
 
 #ifdef OLED 
 #include "U8glib.h"
@@ -136,10 +140,21 @@ void voltagetest()
 
   int sensorValue = analogRead(VOLT_SENS); // read the input on analog pin 0:
 
-  voltage = sensorValue * (6.05 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
+    unsigned long currentrunthtime = millis();
+    if (currentrunthtime - updatetime >= 100) {
+      updatetime = currentrunthtime;
+      counter += 1;
+      samplevoltage += sensorValue; 
+    }
+    
+    if (counter >= 10) {   // if we have 10 samples            
+          oldvoltage = (samplevoltage / 10);
+          samplevoltage = 0;
+          counter = 0;
+    }
+    
+  voltage = oldvoltage * (6.05 / 1023.0) * ((R1 + R2) / R2); // Convert the analog reading (which goes from 0 - 1023) to a voltage, considering the voltage divider:
   // use 6.00 for direct lipo and 6.05 for packs with bms and extension cable
-  //voltage = round(voltage * 10) / 10.0; //round the result
-  VoltageByte = voltage * 10;
 
   cellvoltage = voltage / 2;
 
