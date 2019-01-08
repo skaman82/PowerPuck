@@ -57,6 +57,8 @@ https://de.aliexpress.com/item/5-v-Micro-USB-Tiny-AVR-ISP-ATtiny44-USBTinyISP-Pr
 
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/iscp.jpg"/>
 
+<img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/oled.jpg"/>
+
 <img src="https://raw.githubusercontent.com/skaman82/PowerPuck/master/pictures/soldered.jpg"/>
 
 
